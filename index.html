@@ -5,16 +5,60 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <!-- Use the title from a page's frontmatter if it has one -->
     <title>Le Wagon - Middleman</title>
-    <link href="stylesheets/application-3c48b980.css" rel="stylesheet" />
+    <link href="stylesheets/application-147d8929.css" rel="stylesheet" />
     <script src="javascripts/application-93de88c9.js"></script>
     <link href="images/favicon-f15af148.png" rel="icon" type="image/png" />
   </head>
   <body>
-    <div id="home">
+    <!-- layouts/layout.erb -->
+    <div class="navbar-wagon">
+  <!-- Logo -->
+  <a href="/" class="navbar-wagon-brand">
+    <img src="images/logo-acc9c0ec.png" alt="logo">
+  </a>
+
+  <!-- Right Navigation -->
+  <div class="navbar-wagon-right hidden-xs hidden-sm">
+
+    <a href="" class="navbar-wagon-item navbar-wagon-link">Host</a>
+    <a href="" class="navbar-wagon-item navbar-wagon-link">Trips</a>
+    <a href="" class="navbar-wagon-item navbar-wagon-link">Messages</a>
+    <a href="team.html" class="navbar-wagon-item navbar-wagon-link">Dream Team</a>
+
+    <!-- Profile picture with dropdown list -->
+    <div class="navbar-wagon-item">
+      <div class="dropdown">
+        <img src="https://kitt.lewagon.com/placeholder/users/hcquach" class="avatar dropdown-toggle" id="navbar-wagon-menu" data-toggle="dropdown">
+        <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
+          <li><a href="#">Profile</a></li>
+          <li><a href="#">Dashboard</a></li>
+          <li><a href="#">Log Out</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Dropdown appearing on mobile only -->
+  <div class="navbar-wagon-item hidden-md hidden-lg">
+    <div class="dropdown">
+      <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
+      <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
+        <li><a href="#">Host</a></li>
+        <li><a href="#">Trips</a></li>
+        <li><a href="#">Messagese</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+   <!-- inject layouts/_navbar.html.erb -->
+    <!--     <div id="home">
   <div class="home-content">
-    <img src="images/logo-acc9c0ec.png" width="200" alt="Logo" />
+
+<img src="images/logo-acc9c0ec.png" width="200" alt="Logo" />
     <p>
       Middleman is now running!
     </p>
@@ -22,7 +66,211 @@
       <a href="about.html">More about this template</a>
     </p>
   </div>
+  </div>
+-->
+
+
+<div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('images/background-7c2d4554.jpg');">
+  <div class="banner-content">
+    <h1>WE'RE GONNA CREATE AWESOME PROJECTS</h1>
+    <p>Come meet us at the Impact Hub Tokyo</p>
+    <a class="btn btn-danger btn-lg" href="https://kitt.lewagon.com/camps/147/products">Discover</a>
+  </div>
 </div>
 
+<div class="container">
+  <div class="row">
+        <div class="col-xs-12 col-md-3">
+          <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/table1-26ec3f53.jpg');">
+          <div class="card-category">ReyRey</div>
+          <div class="card-description">
+            <h2>PicMo</h2>
+            <p>Edit, Share, and feel the ease!</p>
+          </div>
+          <img class="card-user" src="https://kitt.lewagon.com/placeholder/users/reymon29" %>
+          <a class="card-link" href="/pitches/reymon29.html"></a>
+        </div>
+      </div>
+        <div class="col-xs-12 col-md-3">
+          <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/table2-02e1ce93.jpg');">
+          <div class="card-category">HC</div>
+          <div class="card-description">
+            <h2>Grateful is the new cool</h2>
+            <p>Stop. Appreciate. Connect on this amazing frequency.</p>
+          </div>
+          <img class="card-user" src="https://kitt.lewagon.com/placeholder/users/hcquach" %>
+          <a class="card-link" href="/pitches/hcquach.html"></a>
+        </div>
+      </div>
+        <div class="col-xs-12 col-md-3">
+          <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/table3-4a60a291.jpg');">
+          <div class="card-category">The Unstoppable</div>
+          <div class="card-description">
+            <h2>A Game for learners</h2>
+            <p>Study while playing</p>
+          </div>
+          <img class="card-user" src="https://kitt.lewagon.com/placeholder/users/oladhari" %>
+          <a class="card-link" href="/pitches/oladhari.html"></a>
+        </div>
+      </div>
+        <div class="col-xs-12 col-md-3">
+          <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/table4-397c9a7e.jpg');">
+          <div class="card-category">The Mysterious</div>
+          <div class="card-description">
+            <h2>Nathan</h2>
+            <p>Read Japanese Right Now...Even If Your Kanji Sucks</p>
+          </div>
+          <img class="card-user" src="https://kitt.lewagon.com/placeholder/users/nathantwarne" %>
+          <a class="card-link" href="/pitches/nathantwarne.html"></a>
+        </div>
+      </div>
+        <div class="col-xs-12 col-md-3">
+          <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/table16-a033ad4a.jpg');">
+          <div class="card-category">The Kind</div>
+          <div class="card-description">
+            <h2>Simple medical record</h2>
+            <p>Simple record. More time with patients:)</p>
+          </div>
+          <img class="card-user" src="https://kitt.lewagon.com/placeholder/users/ofuku" %>
+          <a class="card-link" href="/pitches/ofuku.html"></a>
+        </div>
+      </div>
+        <div class="col-xs-12 col-md-3">
+          <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/table6-870a204e.jpg');">
+          <div class="card-category">Typo-Killer</div>
+          <div class="card-description">
+            <h2>My Crypto Fund</h2>
+            <p>We Make Crypto-Investing Simple</p>
+          </div>
+          <img class="card-user" src="https://kitt.lewagon.com/placeholder/users/timo1989" %>
+          <a class="card-link" href="/pitches/timo1989.html"></a>
+        </div>
+      </div>
+        <div class="col-xs-12 col-md-3">
+          <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/table7-0dd35d84.jpg');">
+          <div class="card-category">French Samurai</div>
+          <div class="card-description">
+            <h2>Oh la la trip !</h2>
+            <p>The travel assistance web app solution for travel industry professionals.</p>
+          </div>
+          <img class="card-user" src="https://kitt.lewagon.com/placeholder/users/josias080" %>
+          <a class="card-link" href="/pitches/josias080.html"></a>
+        </div>
+      </div>
+        <div class="col-xs-12 col-md-3">
+          <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/table12-84f71e85.jpg');">
+          <div class="card-category">CapeTown Girl</div>
+          <div class="card-description">
+            <h2>MovInJpn</h2>
+            <p>Get fit: run this town!</p>
+          </div>
+          <img class="card-user" src="https://kitt.lewagon.com/placeholder/users/ammeliediemont" %>
+          <a class="card-link" href="/pitches/ammeliediemont.html"></a>
+        </div>
+      </div>
+        <div class="col-xs-12 col-md-3">
+          <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/table9-7d437d55.jpg');">
+          <div class="card-category">The T in HTML</div>
+          <div class="card-description">
+            <h2>piggy baku</h2>
+            <p>secret bank for sensitive people</p>
+          </div>
+          <img class="card-user" src="https://kitt.lewagon.com/placeholder/users/tomcana" %>
+          <a class="card-link" href="/pitches/tomcana.html"></a>
+        </div>
+      </div>
+        <div class="col-xs-12 col-md-3">
+          <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/table10-6785e0ac.jpg');">
+          <div class="card-category">Sporty Girl</div>
+          <div class="card-description">
+            <h2>My Content Generator</h2>
+            <p>Make procrastination useful again.</p>
+          </div>
+          <img class="card-user" src="https://kitt.lewagon.com/placeholder/users/alexandrakira100" %>
+          <a class="card-link" href="/pitches/alexandrakira100.html"></a>
+        </div>
+      </div>
+        <div class="col-xs-12 col-md-3">
+          <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/table11-2b8b8ace.jpg');">
+          <div class="card-category">Coding Gonzales</div>
+          <div class="card-description">
+            <h2>IDEALIB</h2>
+            <p>Tailored suggestions based on personal libraries</p>
+          </div>
+          <img class="card-user" src="https://kitt.lewagon.com/placeholder/users/JLawWN" %>
+          <a class="card-link" href="/pitches/JLawWN.html"></a>
+        </div>
+      </div>
+        <div class="col-xs-12 col-md-3">
+          <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/table8-9050ffe6.jpg');">
+          <div class="card-category">Optional Lover</div>
+          <div class="card-description">
+            <h2>GeoScrapBook</h2>
+            <p>Share your journeys and let others experience them</p>
+          </div>
+          <img class="card-user" src="https://kitt.lewagon.com/placeholder/users/edmond-dantes" %>
+          <a class="card-link" href="/pitches/edmond-dantes.html"></a>
+        </div>
+      </div>
+        <div class="col-xs-12 col-md-3">
+          <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/table15-670ce21f.jpg');">
+          <div class="card-category">Damn Yuki</div>
+          <div class="card-description">
+            <h2>Cheese</h2>
+            <p>Here You Are You can check anything you want to eat!</p>
+          </div>
+          <img class="card-user" src="https://kitt.lewagon.com/placeholder/users/ykaito21" %>
+          <a class="card-link" href="/pitches/ykaito21.html"></a>
+        </div>
+      </div>
+        <div class="col-xs-12 col-md-3">
+          <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/table14-39689ff1.jpg');">
+          <div class="card-category">The Sleepy Avenger</div>
+          <div class="card-description">
+            <h2>Title Pending</h2>
+            <p>Game sharing made easy</p>
+          </div>
+          <img class="card-user" src="https://kitt.lewagon.com/placeholder/users/gianluca24" %>
+          <a class="card-link" href="/pitches/gianluca24.html"></a>
+        </div>
+      </div>
+        <div class="col-xs-12 col-md-3">
+          <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/table13-5cdb6e06.jpg');">
+          <div class="card-category">Pool Prodigy</div>
+          <div class="card-description">
+            <h2>Hikaru</h2>
+            <p>No Worry For Transportation</p>
+          </div>
+          <img class="card-user" src="https://kitt.lewagon.com/placeholder/users/hfuruhashi" %>
+          <a class="card-link" href="/pitches/hfuruhashi.html"></a>
+        </div>
+      </div>
+        <div class="col-xs-12 col-md-3">
+          <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/table5-e0b31d68.jpg');">
+          <div class="card-category">The Crazy</div>
+          <div class="card-description">
+            <h2>Gurumeguru</h2>
+            <p>know where to go!</p>
+          </div>
+          <img class="card-user" src="https://kitt.lewagon.com/placeholder/users/jimmyp123" %>
+          <a class="card-link" href="/pitches/jimmyp123.html"></a>
+        </div>
+      </div>
+  </div>
+</div>
+                      <!-- Page content is injected here -->
+    <div class="footer">
+  <div class="footer-links">
+    <a href="#"><i class="fa fa-github"></i></a>
+    <a href="#"><i class="fa fa-instagram"></i></a>
+    <a href="#"><i class="fa fa-facebook"></i></a>
+    <a href="#"><i class="fa fa-twitter"></i></a>
+    <a href="#"><i class="fa fa-linkedin"></i></a>
+  </div>
+  <div class="footer-copyright">
+    This footer is made with <i class="fa fa-heart"></i> at Le Wagon
+  </div>
+</div>
+   <!-- inject layouts/_footer.html.erb -->
   </body>
 </html>
