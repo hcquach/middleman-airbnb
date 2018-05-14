@@ -1,0 +1,18 @@
+<!-- source/flats/show.html.erb -->
+
+<!-- Access data.flats with owner's name as key -->
+<% pitch = data.pitches[owner] %>
+
+<!-- Inject flat data in template -->
+
+<div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('<%= "../images/#{pitch.table}" %>');">
+  <div class="banner-content">
+    <%= image_tag "https://kitt.lewagon.com/placeholder/users/#{owner}", class: "img-circle img-avatar", width:"200px" %>
+    <h1><%= pitch.title %></h1>
+    <p><%= pitch.tagline %></p>
+    <a class="btn btn-danger btn-lg" href="https://kitt.lewagon.com/camps/147/products">Discover</a>
+  </div>
+</div>
+
+
+

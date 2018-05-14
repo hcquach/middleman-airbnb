@@ -20,3 +20,7 @@ activate :deploy do |deploy|
   deploy.build_before = true
   deploy.deploy_method = :git
 end
+
+data.pitches.each do |pitch, info|
+  proxy "/pitches/#{info.github_username}.html", "/pitches/show.html", locals: { owner: info.github_username }, ignore: true
+end

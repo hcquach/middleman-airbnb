@@ -2,14 +2,43 @@
 title: Le Wagon - Middleman
 ---
 
-<div id="home">
+<!--     <div id="home">
   <div class="home-content">
-    <%= image_tag "logo.png", width: "200" %>
+
+<%= image_tag "logo.png", width: "200" %>
     <p>
       Middleman is now running!
     </p>
     <p class="about">
       <%= link_to "More about this template", "about.html" %>
     </p>
+  </div>
+  </div>
+-->
+
+
+<div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('images/background.jpg');">
+  <div class="banner-content">
+    <h1>WE'RE GONNA CREATE AWESOME PROJECTS</h1>
+    <p>Come meet us at the Impact Hub Tokyo</p>
+    <a class="btn btn-danger btn-lg" href="https://kitt.lewagon.com/camps/147/products">Discover</a>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+      <% data.pitches.each do |student, info| %>
+        <div class="col-xs-12 col-md-3">
+          <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('<%= "images/#{info.table}" %>');">
+          <div class="card-category"><%= info.nickname %></div>
+          <div class="card-description">
+            <h2><%= info.title %></h2>
+            <p><%= info.tagline %></p>
+          </div>
+          <img class="card-user" src="<%= "https://kitt.lewagon.com/placeholder/users/#{info.github_username}" %>" %>
+          <a class="card-link" href="<%= "/pitches/#{info.github_username}.html" %>"></a>
+        </div>
+      </div>
+      <% end %>
   </div>
 </div>
